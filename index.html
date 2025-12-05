@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spree  With Dee - Y2K Aesthetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    
+    <div class="top-banner">
+        Cash on Delivery All Over Lebanon
+    </div>
+     
+       <nav>
+    <div class="logo">
+        <img src="logo.png" alt="Spree with Dee Logo">
+    </div>
+    
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#build">Build It</a>
+    </div>
+    
+    <div class="header-icons">
+    <a href="#search"><i class="fas fa-search"></i></a>
+    <a href="#account"><i class="fas fa-user"></i></a>
+    <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+</div>
+</nav>
+    
+
+    <section class="hero">
+
+    <div class="hero-left">
+        <div class="model-card">
+            <img src="models.png" alt="Fashion Model 1">
+        </div>
+    </div>
+
+    <!-- Center - Title -->
+    <div class="hero-center">
+        <h1 class="hero-title">
+            <span class="title-line">All Era's <br> </span>
+            <span class="title-line">All Aesthetics <br> </span>
+            <span class="title-line highlight">All You! <br> </span>
+        </h1>
+        <button class="browse"> Browse </button>
+    </div>
+    <div class="hero-right">
+        
+            <img src="clothes.png" alt="clothes">
+        
+    </div>
+</section>
+
+    <section class="about-section">
+        <div class="camera-display">
+            <div class="camera-screen">
+                <img src="camera.png" alt="Camera display" style="max-width: 100%; border-radius: 5px;">
+            </div>
+        </div>
+        <div class="about-text">
+            <h2>About Us <span class="star">★</span></h2>
+            <p>Dee runs a cozy thrift shop filled with vintage clothes, décor, and timeless pieces, all carefully curated to give old treasures new life. She knows her customers personally, sharing stories behind special finds and helping them create unique looks. More than a store, her shop is a warm community space built on sustainability, creativity, and connection..</p>
+            <button class="read-more">Read More</button>
+        </div>
+        <div class="about-swirl"> 
+            <img src="swirl.png" alt="about-swirl" style="max-width: 100%">
+        </div>
+    </section>
+
+   
+     <section class="categories">
+        <h2> <span class="category-star">★</span>Categories <span class="category-star">★</span></h2>
+
+        <div class="carousel-container">
+            <button class="carousel-arrow left-arrow" onclick="moveCarousel(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="category-carousel">
+                <div class="category-card">
+                    <div class="category-circle">
+                        <img src="y2k.png" alt="Y2K Category">
+                    </div>
+                    <h3 style="color: #FFD700;">Y2K</h3>
+                    <p>Explore our Y2K Collection featuring metallics and futuristic cool.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-circle">
+                        <img src="grunge.png" alt="Grunge Category">
+                    </div>
+                    <h3 style="color: #00CED1;">Grunge</h3>
+                    <p>Discover our Grunge Collection — a rebellion, effortlessly undone.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-circle">
+                        <img src="90's.png" alt="90's Category">
+                    </div>
+                    <h3 style="color: #9370DB;">90's</h3>
+                    <p>Embrace bold prints, vintage denim, laid-back fits, & timeless retro energy.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-circle">
+                        <img src="vintage.png" alt="Vintage Category">
+                    </div>
+                    <h3 style="color: #FF6B9D;">Vintage</h3>
+                    <p>Classic pieces with timeless charm, bringing nostalgia & elegance.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-circle">
+                        <img src="boho.png" alt="Boho Category">
+                    </div>
+                    <h3 style="color: #87CEEB;">Boho</h3>
+                    <p>Free-spirited style with flowing fabrics, earthy tones, & artistic flair.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-circle">
+                        <img src="retro.png" alt="Retro Category">
+                    </div>
+                    <h3 style="color: #FF8C42;">Retro</h3>
+                    <p>Throwback vibes from decades past with bold patterns & vibrant colors.</p>
+                </div>
+            </div>
+            
+            <button class="carousel-arrow right-arrow" onclick="moveCarousel(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <div class="carousel-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 2; // Now showing 3 at a time from 6 total = 2 slides
+
+        function moveCarousel(direction) {
+            currentSlide += direction;
+            
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            } else if (currentSlide >= totalSlides) {
+                currentSlide = 0;
+            }
+            
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const carousel = document.querySelector('.category-carousel');
+            const slideWidth = 100; // Each slide shows 3 cards (100% width)
+            carousel.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+            
+            // Update dots
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+    </script>
+
+</body>
+</html>
