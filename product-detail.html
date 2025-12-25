@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Spree With Dee</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="product page style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="top-banner">
+        Cash on Delivery All Over Lebanon
+    </div>
+
+        <div id="nav-placeholder"></div>
+
+
+    <div class="product-section container">
+        <div class="product-layout">
+
+            <div class="product-images">
+                <img src="" alt="Product Main Image" class="main-image" id="mainImage">
+
+                <div class="thumbnail-images" id="thumbnailImages">
+                </div>
+            </div>
+
+            <div class="product-details">
+
+                <div class="product-header">
+                    <h1>Products <span class="products-star">★</span></h1>
+                    <p class="product-category" id="productCategory"></p>
+                </div>
+
+                <div class="title-stock">
+                    <h2 class="product-name" id="productName"></h2>
+                    <span class="in-stock">In Stock</span>
+                </div>
+
+                <p class="product-description" id="productDescription">
+                   
+                </p>
+
+                <div class="product-price" id="productPrice"></div>
+
+                <div class="size-section" id="sizeSection" style="display: none;">
+                    <span class="size-label" id="sizeLabel"></span>
+                </div>
+
+                <div class="action-buttons">
+                    <button onclick="handleAddToCart(this)" class="add-to-cart-btn">
+    Add to Cart
+</button>
+
+                    <button class="buy-now-btn">Buy Now</button>
+                </div>
+
+                <div class="details-section" id="detailsSection" style="display: none;">
+                    <h3>Details</h3>
+                    <div id="detailsContent">
+                        <!-- Details will be dynamically added if available -->
+                    </div>
+                </div>
+
+                <div class="delivery-section">
+                    <h3>Delivery Information</h3>
+                    <p class="delivery-info">
+                        <strong>Pickup/Delivery available</strong><br>
+                        Usually ready in 2-3 business days
+                    </p>
+                </div>
+
+                <div class="share-section">
+                    <button class="share-btn" onclick="shareProduct()">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ⭐ PROMO BANNER (stands alone now!) -->
+    <div class="promo-banner">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+            </div>
+            <div class="marquee-content">
+                <span class="banner-text"><span class="marquee-star">★</span> Free gift with every $50 purchase </span>
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+                <span class="banner-text"> <span class="marquee-star">★</span>Free gift with every $50 purchase </span>
+                <span class="banner-text">  <span class="marquee-star">★</span> Free gift with every $50 purchase </span>
+            </div>
+    </div>
+    </div>
+
+    <!-- ⭐ RECOMMENDATIONS SECTION -->
+    <div class="recommendations">
+        <h2>
+            <span class="products-star">★</span> 
+            Recommendations 
+            <span class="products-star">★</span>
+        </h2>
+
+        <div class="recommendations-grid" id="recommendationsGrid"></div>
+    </div>
+<div id="footer-wrapper">
+      <div id="squiggle2">
+        <img src="images/Squiggle2.png" alt="image" />
+      </div>
+
+      <div id="overlay">
+        <img src="images/overlay1.png" alt="Squiggle" />
+        <img src="images/overlay2.png" alt="Squiggle" />
+      </div>
+
+      <footer>
+        <div id="left">
+          <img src="images/footer_logo.png" alt="Logo" />
+        </div>
+
+        <div id="sizing">
+          <div id="middle1">
+            <div class="footer_title">
+              <p class="titles">Navigate</p>
+              <img src="images/star3.png" alt="star" />
+            </div>
+            <div class="social_container">
+              <div class="footer_socials">
+                <p>Home</p>
+              </div>
+              <div class="footer_socials">
+                <p>About Us</p>
+              </div>
+              <div class="footer_socials">
+                <p>Build it!</p>
+              </div>
+              <div class="footer_socials">
+                <p>Reviews</p>
+              </div>
+
+              <div class="footer_socials">
+                <p>Contact U</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="middle2">
+            <div class="footer_title">
+              <p class="titles">Socials</p>
+              <img src="images/star3.png" alt="star" />
+            </div>
+            <div class="social_container">
+              <div class="footer_socials">
+                <img
+                  src="images/insta_icon.png"
+                  alt="Instagram Icon"
+                  class="icon"
+                />
+                <p><span>@</span>Spreewithdee</p>
+              </div>
+              <div class="footer_socials">
+                <img
+                  src="images/tiktok_icon.png"
+                  alt="Tiktok Icon"
+                  class="icon"
+                />
+                <p><span>@</span>Spreewithdee</p>
+              </div>
+              <div class="footer_socials">
+                <img
+                  src="images/facebook_icon.png"
+                  alt="Facebook Icon"
+                  class="icon"
+                />
+                <p>Spree With Dee</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="right">
+            <div id="right_top_part">
+              <div class="footer_title" id="footer_title_2">
+                <p class="titles">Contact Us</p>
+                <img src="images/star3.png" alt="star" />
+              </div>
+              <div class="social_container" id="social_container_2">
+                <div class="footer_socials">
+                  <img
+                    src="images/whatsapp_icon.png"
+                    alt="Whatsapp Icon"
+                    class="icon"
+                  />
+                  <p>+961 03 123 456</p>
+                </div>
+                <div class="footer_socials">
+                  <img
+                    src="images/mails_icon.png"
+                    alt="Messages Icon"
+                    class="icon"
+                  />
+                  <p>shopwithus <span>@</span>spreewithdee.com</p>
+                </div>
+              </div>
+            </div>
+            <div id="community">
+              <p id="p1">Join Our Whatsapp Community</p>
+              <p id="p2">chat.whatsapp.com/Bif0VojwGSu8C620JGpQrb</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="product-script.js"></script>
+    <script src="loadNav.js"></script>
+
+</body>
+</html>

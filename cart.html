@@ -1,71 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Spree With Dee</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    
-    <div class="top-banner">
-        Cash on Delivery All Over Lebanon
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart - Spree With Dee</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <div class="cart-container">
+      <div class="cart-swirl">
+        <img src="images/swirl.png" alt="swirl decoration" />
+      </div>
+
+      <div class="bag">
+        <img src="images/bag.png" alt=" bag" />
+      </div>
+
+      <div class="cart-header">
+        <h1 class="cart-title">
+          <span class="star">★</span> My Cart <span class="star">★</span>
+        </h1>
+      </div>
+
+      <div class="cart-content">
+        <div class="cart-items-section">
+          <div id="cartItemsList" class="cart-items-list">
+          </div>
+
+          <div class="total-price-box">
+            <h3>Total Price</h3>
+            <p id="totalPrice" class="total-amount">$45</p>
+          </div>
+
+          <div class="payment-delivery-row">
+            <div class="payment-method-box">
+              <h3>Payment Method</h3>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="cash" checked />
+                <span>Cash on Delivery</span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="credit" />
+                <span>Credit Card</span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="visa" />
+                <span>Visa Card</span>
+              </label>
+            </div>
+
+            <div class="delivery-method-box">
+              <label class="delivery-option-inline">
+                <input
+                  type="checkbox"
+                  name="delivery"
+                  value="delivery"
+                  id="deliveryCheck"
+                />
+                <span>Delivery</span>
+              </label>
+              <label class="delivery-option-inline">
+                <input
+                  type="checkbox"
+                  name="delivery"
+                  value="pickup"
+                  id="pickupCheck"
+                />
+                <span>Pick Up</span>
+              </label>
+              <input type="text" placeholder="Address" id="addressInput" />
+              <input type="text" placeholder="Mobile Number" id="mobileInput" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="emptyCartMessage"
+          class="empty-cart-message"
+          style="display: none"
+        >
+          <p>Your cart is empty!</p>
+          <a href="products.html" class="browse-btn">Browse Products</a>
+        </div>
+
+        <div class="checkout-footer" id="checkoutfooter">
+          <label class="terms-checkbox">
+            <input type="checkbox" id="termsCheckbox" />
+            <span>I have read and agreed on terms and conditions</span>
+          </label>
+
+          <button class="pay-now-btn" id="payNowBtn">Pay Now</button>
+        </div>
+      </div>
     </div>
-     
-        <div id="nav-placeholder"></div>
-
-    <div class="container">
-        <aside class="sidebar">
-            <div class="filter-section">
-                <h3 class="filter-title">Filters</h3>
-                <p class="product-count">87 Products</p>
-            </div>
-
-            <div class="filter-section">
-                <h3 class="section-title">Category</h3>
-                <div class="category-list" id="categoryList"></div>
-            </div>
-
-            <div class="filter-section">
-                <h3 class="section-title">Color</h3>
-                <div class="color-grid" id="colorGrid"></div>
-            </div>
-
-            <div class="filter-section">
-                <h3 class="section-title">Size</h3>
-                <div class="size-section">
-                    <p class="size-label">Shoe</p>
-                    <div class="size-grid" id="shoeSizeGrid"></div>
-                </div>
-                <div class="size-section">
-                    <p class="size-label">Clothing</p>
-                    <div class="size-grid" id="clothingSizeGrid"></div>
-                </div>
-            </div>
-            <div class="filter-swirl"> 
-            <img src="images/swirl.png" alt="about-swirl" style="max-width: 100%">
-        </div>
-        </aside>
-
-        <main class="main-content">
-            <div class="main-swirl"> 
-            <img src="images/swirl.png" alt="about-swirl" style="max-width: 100%">
-        </div>
-            <div class="header">
-                <h1 class="page-title"> <span class="products-star">★</span> Products <span class="products-star">★</span></h1>
-                <div class="filter-info">
-                    <span class="filter-label">Active filter:</span>
-                    <span id="activeFilter"> All Products </span>
-                </div>
-            </div>
-
-        <div id="productsGrid" class="products-grid"></div>
-        <div id="pagination"></div>
-
-        </div>
-    
 <div id="footer-wrapper">
       <div id="squiggle2">
         <img src="images/Squiggle2.png" alt="image" />
@@ -173,8 +207,7 @@
         </div>
       </footer>
     </div>
-    <script src="products.js"></script>
+    <script src="cart.js"></script>
     <script src="loadNav.js"></script>
-
-</body>
+  </body>
 </html>

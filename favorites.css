@@ -1,0 +1,149 @@
+.favorites-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 150px 40px 40px 40px;
+  position: relative;
+}
+
+.favorites-swirl {
+  position: absolute;
+  right: -10px;
+  top: 10vh;
+  width: 750px;
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.favorites-swirl img {
+  width: 100%;
+  height: auto;
+}
+
+.favorites-header {
+  padding-left: 15px;
+  text-align: LEFT;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.favorites-title {
+  font-weight: 300;
+  font-size: 48px;
+  color: #c80253;
+  font-family: "Mainstay", serif;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: #fa9bbf;
+  font-size: 1em;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.favorite-card {
+  position: relative;
+  transition: all 0.3s ease;
+  background: white;
+  overflow: hidden;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.favorite-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.remove-favorite-btn {
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.remove-favorite-btn:hover{
+  border: none;
+
+}
+.remove-favorite-btn svg {
+  fill: #c80253;
+  stroke: #c80253;
+  transition: all 0.3s ease;
+}
+
+.remove-favorite-btn:hover svg {
+  fill: #ff69b4;
+  stroke: #ff69b4;
+  transform: scale(1.1);
+}
+
+.empty-message {
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.empty-message p {
+  font-size: 24px;
+  color: #ea79a5;
+  font-family: "Mainstay", serif;
+  margin-bottom: 20px;
+}
+
+.browse-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #0ab0b7;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.browse-btn:hover {
+  background: #0097a7;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .favorites-container {
+    padding: 120px 20px 40px;
+  }
+
+  .favorites-title {
+    font-size: 36px;
+  }
+
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .favorites-swirl {
+    width: 500px;
+    right: -100px;
+  }
+}

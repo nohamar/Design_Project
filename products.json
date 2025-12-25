@@ -1,0 +1,664 @@
+{
+  "categories": ["Accessories", "Clothing", "Shoes", "Bags", "Jewelry"],
+  "styleCategories": [
+    {
+      "name": "Y2K",
+      "color": "#FF8004",
+      "image": "images/y2k.png",
+      "description": "Explore our Y2K Collection featuring metallics and futuristic cool.",
+      "decoration": {
+        "arrow": "images/arrow-curve.png",
+        "text": "The golden era",
+        "position": "bottom"
+      }
+    },
+    {
+      "name": "Grunge",
+      "color": "#CE0208",
+      "image": "images/grunge.png",
+      "description": "Discover our Grunge Collection — a rebellion, effortlessly undone."
+    },
+    {
+      "name": "90's",
+      "color": "#0AB0B7",
+      "image": "images/90's.png",
+      "description": "Embrace bold prints, vintage denim, laid-back fits, & timeless retro energy.",
+      "decoration": {
+        "arrow": "images/arrow top.png",
+        "text": "looking for me? ",
+        "position": "top"
+      }
+    },
+    {
+      "name": "Boho",
+      "color": "#EAD079",
+      "image": "images/boho.png",
+      "description": "Free-spirited style with flowing fabrics, earthy tones, & artistic flair."
+    },
+    {
+      "name": "Street",
+      "color": "#E9B50A",
+      "image": "images/street.png",
+      "description": "Throwback vibes from decades past with bold patterns & vibrant colors.",
+      "decoration": {
+        "arrow": "images/arrow-curve.png",
+        "text": "Wanna be cool?",
+        "position": "bottom"
+      }
+    },
+    {
+      "name": "Vintage",
+      "color": "#FA9BBF",
+      "image": "images/vintage.png",
+      "description": "Classic pieces with timeless charm, bringing nostalgia & elegance.",
+      "decoration": {
+        "arrow": "images/arrow top.png",
+        "text": "i'm grandpa cool ",
+        "position": "top"
+      }
+    }
+  ],
+  "colors": [
+    { "name": "Black", "hex": "#000000" },
+    { "name": "Blue", "hex": "#0AB0B7" },
+    { "name": "Brown", "hex": "#824D3C" },
+    { "name": "Green", "hex": "#79EA8E" },
+    { "name": "Grey", "hex": "#B2B2B5" },
+    { "name": "Orange", "hex": "#FF7B07" },
+    { "name": "Pink", "hex": "#EA79A5" },
+    { "name": "Red", "hex": "#C90616" },
+    { "name": "Tan", "hex": "#E9DBAB" }
+  ],
+  "shoeSizes": ["6", "7", "8", "9", "10", "11", "12", "13"],
+  "clothingSizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+  "products": [
+    {
+      "name": "Vintage Strawberry Watch",
+      "price": "$5",
+      "colors": ["#C90616", "#E9DBAB", "#79EA8E"],
+      "image": "images/strawberry-bracelet.png",
+      "thumbnail": "images/strawberry-bracelet.png",
+      "category": "Clothing",
+      "style": "Y2K",
+      "description": "A whimsical vintage watch featuring adorable strawberry details. Perfect for adding a playful touch to any outfit.",
+      "sizes": [],
+      "details": {
+        "Waist": "28",
+        "Bust": "76",
+        "Condition": "Used"
+      }
+    },
+    {
+      "name": "Rustic Vintage Gold Bracelet",
+      "price": "$4",
+      "colors": ["#000000", "#B2B2B5"],
+      "image": "images/gold-bracelet.png",
+      "category": "Accessories",
+      "style": "Vintage",
+      "description": "A beautifully aged gold-tone bracelet with rustic charm. Its weathered finish gives it authentic vintage character.",
+      "sizes": [],
+      "details": {
+        "Length": "18 cm",
+        "Material": "Metal",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Authentic Playboy Glasses",
+      "price": "$10",
+      "colors": ["#EA79A5", "#B2B2B5"],
+      "image": "images/playboy-glasses.png",
+      "category": "Accessories",
+      "style": "Y2K",
+      "description": "Iconic Playboy branded sunglasses that scream Y2K nostalgia. A statement piece for any vintage enthusiast.",
+      "sizes": [],
+      "details": {
+        "Width": "14 cm",
+        "Style": "Vintage",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Authentic Chanel Bag",
+      "price": "$60",
+      "colors": ["#E9DBAB", "#000000"],
+      "image": "images/chanel-bag.png",
+      "category": "Bags",
+      "style": "Vintage",
+      "description": "A timeless Chanel bag that exudes luxury and sophistication. The perfect investment piece for your wardrobe.",
+      "sizes": ["6", "7", "8", "9", "10"],
+      "details": {
+        "Dimensions": "30x25x12 cm",
+        "Material": "Leather",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Authentic Crocodile Skin Bag",
+      "price": "$50",
+      "colors": ["#000000", "#824D3C"],
+      "image": "images/crocodile-skin.png",
+      "category": "Bags",
+      "style": "Vintage",
+      "description": "Luxurious crocodile leather bag with stunning texture. A bold statement piece that elevates any ensemble.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "28x22x10 cm",
+        "Material": "Crocodile Leather",
+        "Condition": "Like New"
+      }
+    },
+    {
+      "name": "Resin Brown Cuff",
+      "price": "$3",
+      "colors": ["#000000", "#0AB0B7"],
+      "image": "images/cuff.png",
+      "category": "Accessories",
+      "style": "Boho",
+      "description": "A chunky resin cuff bracelet in rich brown tones. Perfect for creating a bold, bohemian look.",
+      "sizes": [],
+      "details": {
+        "Width": "6 cm",
+        "Material": "Resin",
+        "Condition": "Used"
+      }
+    },
+    {
+      "name": "Vintage Bracelet",
+      "price": "$5",
+      "colors": ["#B2B2B5", "#79EA8E"],
+      "image": "images/vintage-bracelet.png",
+      "category": "Accessories",
+      "style": "Vintage",
+      "description": "A delicate beaded bracelet with vintage charm. Layer it with other pieces for an eclectic look.",
+      "sizes": ["S", "M", "L"],
+      "details": {
+        "Length": "20 cm",
+        "Material": "Beaded",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Vintage Gold Bracelet",
+      "price": "$5",
+      "colors": ["#000000"],
+      "image": "images/vintage-gold.png",
+      "category": "Accessories",
+      "style": "Vintage",
+      "description": "Classic gold-plated bracelet with timeless appeal. A versatile piece that complements any style.",
+      "sizes": [],
+      "details": {
+        "Length": "19 cm",
+        "Material": "Gold Plated",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Authentic Vintage Coach Bag",
+      "price": "$50",
+      "colors": ["#000000", "#8B4513"],
+      "image": "images/coach-bag.png",
+      "category": "Bags",
+      "style": "Vintage",
+      "description": "Premium vintage Coach bag in pristine condition. Features classic Coach craftsmanship and durability.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "32x28x15 cm",
+        "Material": "Leather",
+        "Condition": "Like New"
+      }
+    },
+    {
+      "name": "Bitsy Boop Tank Top",
+      "price": "$10",
+      "colors": ["#000000"],
+      "image": "images/bitsy-boop-tank.png",
+      "category": "Clothing",
+      "style": "Y2K",
+      "description": "Fun and flirty Betty Boop tank top that brings Y2K vibes. Perfect for casual summer days.",
+      "sizes": ["S", "M"],
+      "details": {
+        "Material": "Polyester",
+        "Style": "Y2K",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Vintage Grunge Zipup Jacket",
+      "price": "$12",
+      "colors": ["#000000"],
+      "image": "images/grunge-zipup.png",
+      "category": "Clothing",
+      "style": "Grunge",
+      "description": "Edgy grunge-style zip-up jacket with authentic vintage wear. Layer it for the perfect 90s aesthetic.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Cotton Blend",
+        "Style": "Grunge",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Grunge Lolita Shoes",
+      "price": "$20",
+      "colors": ["#000000"],
+      "image": "images/lolita-shoes.png",
+      "category": "Shoes",
+      "style": "Grunge",
+      "description": "Patent leather platform shoes with a grunge-meets-lolita aesthetic. Statement footwear for bold outfits.",
+      "sizes": ["6", "7", "8"],
+      "details": {
+        "Material": "Patent Leather",
+        "Style": "Grunge",
+        "Condition": "Like New"
+      }
+    },
+    {
+      "name": "Grunge Corset",
+      "price": "$10",
+      "colors": ["#000000"],
+      "image": "images/grunge-corset.png",
+      "category": "Clothing",
+      "style": "Grunge",
+      "description": "Romantic lace corset with grunge edge. Perfect for layering or wearing as a statement piece.",
+      "sizes": ["S", "M"],
+      "details": {
+        "Material": "Lace",
+        "Style": "Grunge",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Latex Baguette Bag",
+      "price": "$10",
+      "colors": ["#C90616"],
+      "image": "images/latex-baguette.png",
+      "category": "Bags",
+      "style": "Y2K",
+      "description": "Bold red latex baguette bag that turns heads. A must-have Y2K accessory for fashion-forward looks.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "25x15x8 cm",
+        "Material": "Latex",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Vintage Button Up Top",
+      "price": "$7",
+      "colors": ["#000000"],
+      "image": "images/button-up-top.png",
+      "category": "Clothing",
+      "style": "Vintage",
+      "description": "Elegant silk-blend button-up with vintage sophistication. Versatile enough for casual or dressy occasions.",
+      "sizes": ["M"],
+      "details": {
+        "Material": "Silk Blend",
+        "Style": "Vintage",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Authentic Dolce & Gabana Bag",
+      "price": "$50",
+      "colors": ["#000000"],
+      "image": "images/dolce-gabana-bag.png",
+      "category": "Bags",
+      "style": "Vintage",
+      "description": "Luxurious Dolce & Gabbana bag with designer appeal. A premium piece that adds instant glamour.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "35x30x12 cm",
+        "Material": "Leather",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Vintage Cheetah Lamp",
+      "price": "$7",
+      "colors": ["#000000", "#824D3C"],
+      "image": "images/cheetah-lamp.png",
+      "category": "Accessories",
+      "style": "Vintage",
+      "description": "Quirky ceramic cheetah lamp that adds personality to any space. A unique vintage find for collectors.",
+      "sizes": [],
+      "details": {
+        "Height": "40 cm",
+        "Material": "Ceramic",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Doll Cushions",
+      "price": "$15",
+      "colors": ["#EA79A5"],
+      "image": "images/doll-cushions.png",
+      "category": "Accessories",
+      "style": "Y2K",
+      "description": "Adorable plush doll cushions in soft pink. Perfect for adding a kawaii touch to your bedroom decor.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "40x40 cm",
+        "Material": "Plush",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Vintage Zipup Jacket",
+      "price": "$12",
+      "colors": ["#EA79A5"],
+      "image": "images/pink-zipup.png",
+      "category": "Clothing",
+      "style": "Y2K",
+      "description": "Cute pink zip-up jacket with Y2K energy. Comfortable cotton perfect for layering over your favorite tees.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Cotton",
+        "Style": "Y2K",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Blue Belt Baguette Bag",
+      "price": "$12",
+      "colors": ["#0AB0B7"],
+      "image": "images/blue-baguette.png",
+      "category": "Bags",
+      "style": "90's",
+      "description": "Trendy blue canvas baguette bag with belt detail. A playful accessory for everyday wear.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "28x18x10 cm",
+        "Material": "Canvas",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Sheer Corset",
+      "price": "$10",
+      "colors": ["#EA79A5"],
+      "image": "images/sheer-corset.png",
+      "category": "Clothing",
+      "style": "Y2K",
+      "description": "Flirty sheer mesh corset in romantic pink. Perfect for creating daring Y2K-inspired outfits.",
+      "sizes": ["S", "M"],
+      "details": {
+        "Material": "Mesh",
+        "Style": "Y2K",
+        "Condition": "Like New"
+      }
+    },
+    {
+      "name": "K Resin Bangles",
+      "price": "$7",
+      "colors": ["#C90616", "#E9DBAB", "#000000"],
+      "image": "images/resin-bangles.png",
+      "category": "Jewelry",
+      "style": "Boho",
+      "description": "Set of colorful resin bangles that stack beautifully. Mix and match for a fun, vibrant look.",
+      "sizes": [],
+      "details": {
+        "Diameter": "6.5 cm",
+        "Material": "Resin",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Vintage Bracelet Set",
+      "price": "$5",
+      "colors": ["#79EA8E", "#FF7B07"],
+      "image": "images/bracelet set.png",
+      "category": "Jewelry",
+      "style": "Boho",
+      "description": "Eclectic set of vintage bracelets in bright hues. Perfect for creating a maximalist arm party.",
+      "sizes": [],
+      "details": {
+        "Length": "18 cm",
+        "Material": "Mixed Metals",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Red Mesh Long Sleeve",
+      "price": "$5",
+      "colors": ["#C90616","#0AB0B7","#000000"],
+      "image": "images/red-mesh.png",
+      "category": "Clothing",
+      "style": "Y2K",
+      "description": "Another beautiful mesh top in red with accents of blue and black. A collector's piece with character.",
+      "sizes": [],
+      "details": {
+        "Length": "50 cm",
+        "Material": " Mesh",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Flared Long Sleeve Shirt",
+      "price": "$10",
+      "colors": ["#000000"],
+      "image": "images/flared-top.png",
+      "category": "Clothing",
+      "style": "Y2K",
+      "description": "Flared black long sleeve shirt. A playful addition to your casual wardrobe.",
+      "sizes": ["S", "M"],
+      "details": {
+        "Material": "Polyester",
+        "Style": "Y2K",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Pink Tote Bag",
+      "price": "$12",
+      "colors": ["#EA79A5", "#C90616"],
+      "image": "images/tote bag.png",
+      "category": "Bags",
+      "style": "Y2K",
+      "description": "Sweet pink tote bag with red writing. A feminine accessory for girly-girl aesthetics.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "26x16x9 cm",
+        "Material": "Canvas",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Authentic White Heels",
+      "price": "$15",
+      "colors": ["#E9DBAB"],
+      "image": "images/leopard-heels.png",
+      "category": "Shoes",
+      "style": "90's",
+      "description": "Classic white heels that never go out of style. Heel perfection for confident fashionistas.",
+      "sizes": ["7", "8", "9"],
+      "details": {
+        "Material": "Leather",
+        "Heel Height": "2 cm",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Authentic C Buckle Bag",
+      "price": "$55",
+      "colors": ["#C90616"],
+      "image": "images/c-buckle-bag.png",
+      "category": "Bags",
+      "style": "Vintage",
+      "description": "Stunning red leather bag with signature C buckle. A designer-inspired piece that makes a statement.",
+      "sizes": [],
+      "details": {
+        "Dimensions": "30x25x10 cm",
+        "Material": "Leather",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Authentic Pink Satin Pants",
+      "price": "$8",
+      "colors": ["#EA79A5"],
+      "image": "images/pink-satin-pants.png",
+      "category": "Clothing",
+      "style": "Y2K",
+      "description": "Silky pink satin shorts with Y2K glamour. Perfect for creating sultry, feminine looks.",
+      "sizes": ["S", "M"],
+      "details": {
+        "Material": "Satin",
+        "Style": "Y2K",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Lightwashed Zip-up Jacket",
+      "price": "$10",
+      "colors": ["#EA79A5"],
+      "image": "images/lightwashed-jacket.png",
+      "category": "Clothing",
+      "style": "90's",
+      "description": "Light-washed denim jacket with vintage fade. A 90s essential for casual, cool outfits.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Cotton",
+        "Style": "90's",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Authentic Nike Sweatshirt",
+      "price": "$18",
+      "colors": ["#0AB0B7"],
+      "image": "images/nike-sweatshirt.png",
+      "category": "Clothing",
+      "style": "Street",
+      "description": "Classic Nike sweatshirt in vibrant blue. Sporty streetwear that's comfortable and stylish.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Cotton Blend",
+        "Style": "Street",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Authentic Nike Sweatshirt II",
+      "price": "$15",
+      "colors": ["#C90616"],
+      "image": "images/nike-red-sweatshirt.png",
+      "category": "Clothing",
+      "style": "Street",
+      "description": "Bold red Nike sweatshirt for athletic style. Perfect for streetwear enthusiasts and sneakerheads.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Cotton Blend",
+        "Style": "Street",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Quad Skate Jacket",
+      "price": "$12",
+      "colors": ["#000000"],
+      "image": "images/quad-skate-jacket.png",
+      "category": "Clothing",
+      "style": "90's",
+      "description": "Vintage denim jacket with skate graphics. An authentic 90s piece for alternative style lovers.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Denim",
+        "Style": "90's",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Authentic Vintage Lilac T-Shirt",
+      "price": "$8",
+      "colors": ["#EA79A5"],
+      "image": "images/lilac-tshirt.png",
+      "category": "Clothing",
+      "style": "Vintage",
+      "description": "Soft lilac vintage tee with retro charm. A wardrobe staple for everyday comfort and style.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Cotton",
+        "Style": "Vintage",
+        "Condition": "Good"
+      }
+    },
+    {
+      "name": "Authentic Nike Hoodie",
+      "price": "$22",
+      "colors": ["#EA79A5"],
+      "image": "images/nike-hoodie.png",
+      "category": "Clothing",
+      "style": "Street",
+      "description": "Cozy pink Nike hoodie combining comfort with street style. A premium athleisure piece.",
+      "sizes": ["M", "L"],
+      "details": {
+        "Material": "Cotton Blend",
+        "Style": "Street",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Authentic Aeropostale Jeans",
+      "price": "$12",
+      "colors": ["#0AB0B7"],
+      "image": "images/aeropostale-jeans.png",
+      "category": "Clothing",
+      "style": "90's",
+      "description": "Classic Aeropostale denim jeans with 90s fit. A timeless piece that works with any casual look.",
+      "sizes": ["S", "M", "L"],
+      "details": {
+        "Material": "Denim",
+        "Style": "90's",
+        "Condition": "Good"
+      }
+    },
+   
+    {
+      "name": "Carnelian Patent Red Heels",
+      "price": "$18",
+      "colors": ["#C90616"],
+      "image": "images/carnelian-heels.png",
+      "category": "Shoes",
+      "style": "Vintage",
+      "description": "Glamorous patent red heels that demand attention. A bold choice for special occasions.",
+      "sizes": ["7", "8", "9"],
+      "details": {
+        "Material": "Patent Leather",
+        "Heel Height": "10 cm",
+        "Condition": "Good"
+      }
+    },
+   
+    {
+      "name": "Authentic Oxford Leather Heels",
+      "price": "$20",
+      "colors": ["#824D3C"],
+      "image": "images/oxford-heels.png",
+      "category": "Shoes",
+      "style": "Vintage",
+      "description": "Sophisticated oxford-style leather heels in brown. Professional elegance meets vintage charm.",
+      "sizes": ["7", "8", "9"],
+      "details": {
+        "Material": "Leather",
+        "Heel Height": "7 cm",
+        "Condition": "Excellent"
+      }
+    },
+    {
+      "name": "Clueless White Heels",
+      "price": "$15",
+      "colors": ["#FFFFFF"],
+      "image": "images/clueless-heels.png",
+      "category": "Shoes",
+      "style": "90's",
+      "description": "Iconic white heels inspired by 90s fashion. Channel your inner Cher with this Clueless classic.",
+      "sizes": ["7", "8", "9"],
+      "details": {
+        "Material": "Leather",
+        "Heel Height": "9 cm",
+        "Condition": "Good"
+      }
+    }
+  ]
+}

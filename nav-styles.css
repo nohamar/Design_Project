@@ -1,0 +1,130 @@
+.top-banner {
+    background-color: #e53e3e;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+
+nav {
+    background-color: #E67BA5;  
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    margin-top: 5px;
+}
+
+.logo img {
+    height: 55px;     
+    width: auto;      
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+    flex: 1;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;      
+}
+
+nav a:hover {
+    color: #C90616;                   
+    transform: translateY(-1px) scale(1.03);
+    transition: transform 260ms cubic-bezier(.2,.8,.2,1), color 240ms ease;
+}
+
+nav a.active {
+    color: #C90616;
+    font-weight: 600;
+}
+
+.header-icons {
+    display: flex;
+    gap: 25px;
+    color: white;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header-icons i:hover {
+    color: #C90616;
+    transition: all 0.3s ease;
+}
+
+.header-icons i.active {
+    color: #C90616;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .header-icons {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        flex: 0 0 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .nav-links {
+        flex: 0 0 100%;
+        gap: 15px;
+        font-size: 14px;
+    }
+    
+    .header-icons {
+        flex: 0 0 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
